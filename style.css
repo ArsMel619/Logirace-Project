@@ -1,1 +1,85 @@
+* {
+  margin-bottom: 20px;
+}
 
+.about h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.about p {
+  color: #cfcfcf;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.missions,
+.news {
+  margin-top: 120px;
+}
+
+.section-title h2 {
+  font-size: 42px;
+  margin-bottom: 40px;
+}
+
+.mission-grid,
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.mission-card,
+.news-card {
+  background: #111;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.mission-card img,
+.news-card img {
+  width: 100%;
+  display: block;
+}
+
+.mission-card h3,
+.news-card h3 {
+  padding: 20px 20px 10px;
+}
+
+.mission-card p,
+.news-card span {
+  padding: 0 20px 20px;
+  color: #cfcfcf;
+}
+
+.news-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.news-card img {
+  width: 150px;
+  border-radius: 14px;
+}
+
+@media (max-width: 1000px) {
+  .stats,
+  .about,
+  .mission-grid,
+  .news-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 80px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+}
